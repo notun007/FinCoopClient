@@ -45,7 +45,9 @@ const routes: Routes = [
       { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
       { path: 'report', loadChildren: () => import('./report/report.module').then(m => m.ReportModule) },
       { path: 'pgw', loadChildren: () => import('./payment-gateway/payment-gateway.module').then(m => m.PaymentGatewayModule) },
-      { path: 'complain', loadChildren: () => import('./complain/complain.module').then(m => m.ComplainModule) }
+      { path: 'complain', loadChildren: () => import('./complain/complain.module').then(m => m.ComplainModule) },
+      { path: 'membership', loadChildren: () => import('./membership/membership.module').then(m => m.MembershipModule) },
+      { path: 'saving', loadChildren: () => import('./saving/saving.module').then(m => m.SavingModule) }
 
     ]
   },
